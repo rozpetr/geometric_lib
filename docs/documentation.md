@@ -91,9 +91,9 @@
 Вывод: `9`
 
 # История изменения проекта с хешами комитов
-b5b0fae - Update docs for calculate.py
-d76db2a - Add calculate.py
-51c40eb - Doc updated for triangle
-d080c78 - Triangle added
-d078c8d - Docs added
-8ba9aeb - Circle and square added
+- b5b0fae - Update docs for calculate.py
+- d76db2a - Add calculate.py
+- 51c40eb - Doc updated for triangle
+- d080c78 - Triangle added
+- d078c8d - Docs added
+- 8ba9aeb - Circle and square added
