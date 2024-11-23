@@ -3,12 +3,11 @@ name: Python CI/CD Workflow
 on:
   push:
     branches:
-      - master
+      - main
       - release
-      - tests
   pull_request:
     branches:
-      - master
+      - main
       - release
       - develop
 
