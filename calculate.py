@@ -1,5 +1,5 @@
-import square
-import circle
+import square  # noqa: F401
+import circle  # noqa: F401
 
 figs = ['circle', 'square']
 funcs = ['perimeter', 'area']
@@ -11,11 +11,17 @@ sizes = {
 
 def calc(fig, func, size):
     if fig not in figs:
-        raise ValueError(f"Invalid figure: {fig}. Available figures: {figs}")
+        raise ValueError(
+            f"Invalid figure: {fig}. Available figures: {figs}"
+        )
     if func not in funcs:
-        raise ValueError(f"Invalid function: {func}. Available functions: {funcs}")
+        raise ValueError(
+            f"Invalid function: {func}. Available functions: {funcs}"
+        )
     if len(size) != sizes[fig]:
-        raise ValueError(f"Invalid size for {fig}. Expected {sizes[fig]} arguments.")
+        raise ValueError(
+            f"Invalid size for {fig}. Expected {sizes[fig]} arguments."
+        )
 
     module = globals()[fig]
     method = getattr(module, func)
@@ -40,13 +46,11 @@ if __name__ == "__main__":
             map(
                 int,
                 input(
-                    f"Input figure sizes separated by space, {sizes[fig]} for {fig}\n"
+                    f"Input figure sizes separated by space, \
+                    {sizes[fig]} for {fig}\n"
                 ).split(' ')
             )
         )
 
     result = calc(fig, func, size)
-
-
-
-
+    # print(f"The {func} of {fig} is {result}")
