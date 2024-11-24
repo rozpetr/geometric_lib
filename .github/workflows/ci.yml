@@ -8,7 +8,6 @@ on:
     branches:
       - main
       - release
-      - feat/tests
 
   pull_request:
     branches:
