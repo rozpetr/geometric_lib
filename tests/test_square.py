@@ -1,4 +1,3 @@
-import pytest
 from square import area as square_area, perimeter as square_perimeter
 
 
